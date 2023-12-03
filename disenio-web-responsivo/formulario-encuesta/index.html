@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA - Encuesta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Encuesta sobre Inteligencia Artificial</h1>
+      <p id="description">
+        Comparte tu experiencia y opiniones sobre la inteligencia artificial. Tu
+        feedback es valioso para nosotros.
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <div class="form-container">
+        <label id="name-label" for="name"
+          >Nombre
+          <input type="text" id="name" required placeholder="Ingresa tu nombre"
+        /></label>
+      </div>
+      <div class="form-container">
+        <label id="email-label" for="email"
+          >Correo Electrónico
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Ingresa tu email"
+        /></label>
+      </div>
+      <div class="form-container">
+        <label id="number-label" for="age"
+          >Edad
+          <input type="number" id="number" min="13" max="120" placeholder="18"
+        /></label>
+      </div>
+      <div class="form-container">
+        <label for="dropdown"
+          >Tema de Interés
+          <select name="interest" id="dropdown">
+            <option value="1">Inteligencia Artificial en la Medicina</option>
+            <option value="2">Automatización y Robótica</option>
+            <option value="3">Ética en la Inteligencia Artificial</option>
+          </select>
+        </label>
+      </div>
+
+      <fieldset class="radios form-container">
+        <legend>
+          ¿Eres optimista sobre el impacto futuro de la inteligencia artificial?
+        </legend>
+        <label> <input type="radio" name="happy" value="yes" /> Si </label>
+        <label> <input type="radio" name="happy" value="no" /> No</label>
+      </fieldset>
+      <fieldset class="checkboxs form-container">
+        <legend>
+          Selecciona aspectos de la inteligencia artificial que te interesan:
+        </legend>
+        <label for="number1"
+          ><input type="checkbox" value="number1" id="number1" /> Aprendizaje
+          Automático
+        </label>
+        <label for="number2"
+          ><input type="checkbox" value="number2" id="number2" /> Procesamiento
+          de Lenguaje Natural</label
+        >
+        <label for="number3"
+          ><input type="checkbox" value="number3" id="number3" /> Visión
+          Computacional</label
+        >
+      </fieldset>
+      <fieldset class="form-container comments">
+        <legend>Comentarios adicionales:</legend>
+        <label for="comments">
+          <textarea
+            name="comments"
+            id="comments"
+            cols="40"
+            rows="4"
+            placeholder="Inserte su comentario"
+          ></textarea>
+        </label>
+      </fieldset>
+      <button id="submit">Enviar</button>
+    </form>
+    <footer>
+      <a href="https://github.com/Francogrch">
+        Desarrolado por Franco Rodriguez</a
+      >
+    </footer>
+  </body>
+</html>
